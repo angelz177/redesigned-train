@@ -14,6 +14,7 @@ class GithubCest
     // tests
     public function tryToTest(AcceptanceTester $I)
     {
+        $I->comment('start test');
         $I->wantTo('see the main Github page');
         $I->amOnPage('/');
         $I->seeInTitle('GitHub');
