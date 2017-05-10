@@ -4,9 +4,9 @@ if (!defined('STDIN')) define('STDIN', fopen('php://stdin', 'r'));
 
 $thisPath = dirname(__FILE__);
 $externals = $thisPath . '/externals/';
-$seleniumURL = 'https://selenium-release.storage.googleapis.com/3.0/selenium-server-standalone-3.0.1.jar';
+$seleniumURL = 'http://selenium-release.storage.googleapis.com/3.4/selenium-server-standalone-3.4.0.jar';
 $chromeDriverURL = 'https://chromedriver.storage.googleapis.com/2.26/chromedriver_mac64.zip';
-$geckoURL = 'https://github.com/mozilla/geckodriver/releases/download/v0.11.1/geckodriver-v0.11.1-macos.tar.gz';
+$geckoURL = 'https://github.com/mozilla/geckodriver/releases/download/v0.16.1/geckodriver-v0.16.1-linux64.tar.gz';
 
 
 if (!file_exists($externals))
