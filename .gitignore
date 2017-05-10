@@ -1,0 +1,7 @@
+/tests/_output/*
+/tests/_log/*
+/tests/_support/_generated/
+
+/.idea/
+/vendor
+tests/_output/*
