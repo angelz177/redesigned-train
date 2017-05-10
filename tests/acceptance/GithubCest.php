@@ -18,8 +18,7 @@ class GithubCest
         $I->amOnPage('/');
         $I->seeInTitle('GitHub');
         $I->click('Sign up for GitHub');
-
-        $I->waitForElement('#user_login');
+        $I->waitForElement('#user_login', 2);
         $I->fillField('#user_login', 'angelz177');
         $I->waitForText('Username is already taken', 2);
     }
