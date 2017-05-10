@@ -3,7 +3,7 @@ php:
   - '5.6'
 
 addons:
-  firefox: "49.0"
+  firefox: latest
 
 before_script:
   - "export DISPLAY=:99.0"
