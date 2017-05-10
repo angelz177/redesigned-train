@@ -2,6 +2,9 @@ language: php
 php:
   - '5.6'
 
+addons:
+  firefox: "49.0"
+
 before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
@@ -12,7 +15,6 @@ before_script:
 
   - sudo apt-get update && sudo apt install oracle-java8-set-default
   - java -version
-  - sudo apt-get update && sudo apt-get install firefox
 
   - php run-selenium-server.php &
   - sleep 30
