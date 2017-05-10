@@ -22,4 +22,4 @@ before_script:
 
 script:
   - vendor/bin/codecept build
-  - vendor/bin/codecept -vvv run acceptance
+  - vendor/bin/codecept run acceptance
