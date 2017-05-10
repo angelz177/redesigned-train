@@ -12,6 +12,9 @@ before_script:
   - composer self-update
   - composer install
 
+  - sudo apt-get update && sudo apt-get install oracle-java8-installer
+  - java -version
+
 
 script:
   - vendor/bin/codecept build
